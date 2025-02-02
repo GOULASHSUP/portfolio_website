@@ -11,8 +11,67 @@
               About
             </h1>
             <transition name="fade">
-              <div v-if="showOpen === 'about'" class="mt-4">
-                <p class="text-lg">I am a passionate student developer from Hungary, but I am currently living in Denmark. I study at the EASV Academy on Web Development, and I like to work with 3D design on the side as a hobby.</p>
+              <div v-if="showOpen === 'about'" class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <a
+                  href="#"
+                  class="relative block overflow-hidden rounded-md p-4 sm:p-6 lg:p-8 bg-zinc-800"
+                >
+                  <span
+                    class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-zinc-100 via-zinc-400 to-accent"
+                  ></span>
+                  
+                  <div class="sm:flex sm:justify-between sm:gap-4">
+                    <div>
+                      <h3 class="text-lg font-bold text-zinc-300 sm:text-2xl">
+                        Hi! My name is Simon.
+                      </h3>
+                      <p class="mt-1 text-sm font-medium text-zinc-400">Learn a little bit about me!</p>
+                    </div>
+                    <div class="hidden sm:block sm:shrink-0">
+                      <img
+                        alt=""
+                        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8"
+                        class="size-20 rounded-md object-cover shadow-sm"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div class="mt-4">
+                    <p class="text-sm text-pretty text-zinc-400">
+                      I am a passionate developer and designer from Hungary, living in Denmark. I graduated from Business Academy SouthWest (EASV) as a
+                      multimedia designer in 2024, and I am currently studying Web Development. I really like 3D design and cars, so feel free to talk about those with me!
+                    </p>
+                  </div>
+                  
+                  <dl class="mt-6 flex gap-4 sm:gap-12">
+                    <div class="flex flex-col-reverse">
+                      <dt class="text-sm font-medium text-zinc-400">2022 – 2024</dt>
+                      <dt class="text-sm font-medium text-zinc-400">Multimedia Design @EASV</dt>
+                      <dd class="text-xs font-medium text-zinc-300">Degrees</dd>
+                    </div>
+                    <div class="flex flex-col-reverse">
+                      <dt class="text-sm font-medium text-zinc-400">2024 – Present</dt>
+                      <dt class="text-sm font-medium text-zinc-400">Web Development @EASV</dt>
+                      <dd class="text-xs font-medium text-zinc-300">Current Education</dd>
+                    </div>
+                  </dl>
+                </a>
+                <div class="relative block overflow-hidden rounded-md p-4 sm:p-6 lg:p-8 bg-gradient-to-b from-zinc-800 via-zinc-900 to-zinc-900">
+                  <h3 class="text-lg font-bold text-zinc-300 sm:text-2xl">
+                    My Skills
+                  </h3>
+                  
+                  <p class="mt-1 text-sm font-medium text-zinc-400">Tools & Technologies I work with:</p>
+                  
+                  <ul class="mt-4 space-y-2 text-sm text-zinc-400">
+                    <li>Styling & Structure Essentials: <span class="text-accent">HTML, CSS, Tailwind</span></li>
+                    <li>Frontend Development Stack: <span class="text-accent">JavaScript, TypeScript, Vue.js</span></li>
+                    <li>Scripting: <span class="text-accent">PHP</span></li>
+                    <li>Development: <span class="text-accent">Node.js, Express.js</span></li>
+                    <li>Databases: <span class="text-accent">Firebase, MongoDB, MySQL</span></li>
+                    <li>CMS: <span class="text-accent">WordPress</span></li>
+                  </ul>
+                </div>
               </div>
             </transition>
           </div>
