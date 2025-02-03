@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-zinc-800 text-zinc-400 py-6 px-6 sm:px-12 flex flex-col sm:flex-row items-start sm:items-center justify-between text-left gap-2 sm:gap-4">
+  <footer class="bg-zinc-800 text-zinc-400 py-6 px-6 lg:px-24 flex flex-col sm:flex-row items-start sm:items-center justify-between text-left gap-2 sm:gap-4">
     <p class="md:text-sm text-xs text-accent">
       <span v-if="githubCommits !== null">{{ githubCommits }} total GitHub commits this year</span>
       <span v-else>Loading commits...</span>

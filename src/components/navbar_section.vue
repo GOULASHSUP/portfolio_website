@@ -1,6 +1,6 @@
 <template>
-    <nav class="bg-zinc-900 text-accent py-4 px-6 sm:px-12 flex justify-between items-center sticky top-0 z-50">
-      <h1 class="text-md sm:text-xl font-bold">SIMON JOBBÁGY</h1>
+    <nav class="bg-zinc-900 text-accent py-4 px-6 lg:px-24 flex justify-between items-center sticky top-0 z-50">
+      <h1 class="text-md sm:text-xl font-bold">Simon Jobbágy</h1>
       <div class="relative">
         <button @click="toggleCookieInfo" class="hover:text-white transition">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cookie" viewBox="0 0 16 16">

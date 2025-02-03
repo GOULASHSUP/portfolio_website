@@ -30,7 +30,7 @@
                     <div class="hidden sm:block sm:shrink-0">
                       <img
                         alt=""
-                        src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8"
+                        src="/src/assets/profile.jpeg"
                         class="size-20 rounded-md object-cover shadow-sm"
                       />
                     </div>
@@ -96,7 +96,7 @@
                             <a href="#">
                                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-zinc-300">{{ project.title }}</h5>
                             </a>
-                            <p class="mb-3 font-normal text-zinc-400">{{ project.description }}</p>
+                            <p class="mb-3 font-normal text-zinc-400 line-clamp-2">{{ project.description }}</p>
                             <a href="#" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
                                 Read more
                                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -122,7 +122,7 @@
               <div v-if="showOpen === 'contact'" class="mt-4">
                 <div class="w-full p-4 text-left rounded-md sm:p-8 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900">
                   <p class="mb-5 text-base text-zinc-200 sm:text-lg">
-                    Feel free to reach out through any of the contact options below or for more information about me, download my cv.
+                    Feel free to reach out through any of the contact options below, or for more information about me, download my CV.
                   </p>
                   <div class="flex flex-col sm:flex-row gap-4">
                     <a href="mailto:your.email@example.com" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
@@ -181,8 +181,8 @@
   };
   
   const projects = ref([
-    { image: 'src/assets/placeholder.jpg', title: 'Project 1', description: 'This project is about a small example company that I worked with in 2023.'  },
-    { image: 'src/assets/placeholder.jpg', title: 'Project 2', description: 'This project is about a small example organization that I helped in 2022.' },
+    { image: 'src/assets/placeholder.jpg', title: 'Cinema Backend Development', description: 'We created a fictional cinema with a simple CRUD backend useing PHP.'  },
+    { image: 'src/assets/placeholder.jpg', title: 'Project 2', description: 'This project is for the Hungarian organization FiKon. We designed and created a new website and established a new brand identity as well, while also build their social media presence.' },
     { image: 'src/assets/placeholder.jpg', title: 'Project 3', description: 'This project is about a small example organization that needed a new website.'  },
     { image: 'src/assets/placeholder.jpg', title: 'Project 4', description: 'This project is about a small example company that asked me for a specific case.'  },
     { image: 'src/assets/placeholder.jpg', title: 'Project 5', description: 'This project is about a small example company that I worked for in 2021.'  },
