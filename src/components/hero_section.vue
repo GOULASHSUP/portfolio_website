@@ -17,7 +17,7 @@
                   class="relative block overflow-hidden rounded-md p-4 sm:p-6 lg:p-8 bg-zinc-800"
                 >
                   <span
-                    class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-zinc-100 via-zinc-400 to-accent"
+                    class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-zinc-300 via-zinc-400 to-accent"
                   ></span>
                   
                   <div class="sm:flex sm:justify-between sm:gap-4">
@@ -119,12 +119,49 @@
             </h1>
             <transition name="fade">
               <div v-if="showOpen === 'contact'" class="mt-4">
-                <ul class="text-lg space-y-2">
-                  <li>Email: <a href="mailto:simon@example.com" class="text-blue-400 hover:underline">simon@example.com</a></li>
-                  <li>Phone: <span class="text-gray-300">+45 123 456 789</span></li>
-                  <li>LinkedIn: <a href="https://linkedin.com/in/simon" target="_blank" class="text-blue-400 hover:underline">linkedin.com/in/simon</a></li>
-                  <li>GitHub: <a href="https://github.com/simon" target="_blank" class="text-blue-400 hover:underline">github.com/simon</a></li>
-                </ul>
+                <div class="w-full p-4 text-left rounded-md sm:p-8 bg-gradient-to-b from-zinc-800 via-zinc-900 to-zinc-900">
+                  <p class="mb-5 text-base text-zinc-200 sm:text-lg">
+                    Feel free to reach out through any of the contact options below or for more information about me, download my cv.
+                  </p>
+                  <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="mailto:your.email@example.com" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
+                      </svg>
+                      <div class="ml-3">
+                        <div class="mb-1 text-xs">Mail me:</div>
+                        <div class="-mt-1 font-sans text-sm font-semibold">jobbagy.simon@gmail.com</div>
+                      </div>
+                    </a>
+                    <a href="https://github.com/GOULASHSUP" target="_blank" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                      </svg>
+                      <div class="ml-3">
+                        <div class="mb-1 text-xs">Check out my projects on:</div>
+                        <div class="-mt-1 font-sans text-sm font-semibold">GitHub</div>
+                      </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/simon-jobbágy/" target="_blank" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                      </svg>
+                      <div class="ml-3">
+                        <div class="mb-1 text-xs">Connect with me:</div>
+                        <div class="-mt-1 font-sans text-sm font-semibold">LinkedIn</div>
+                      </div>
+                    </a>
+                    <a href="/cv.pdf" download="cv.pdf" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                      </svg>
+                      <div class="ml-3">
+                        <div class="mb-1 text-xs">More info about me:</div>
+                        <div class="-mt-1 font-sans text-sm font-semibold">Download my CV</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
             </transition>
           </div>
