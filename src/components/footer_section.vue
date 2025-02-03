@@ -1,11 +1,11 @@
 <template>
   <footer class="bg-zinc-800 text-zinc-400 py-6 px-6 sm:px-12 flex flex-col sm:flex-row items-start sm:items-center justify-between text-left gap-2 sm:gap-4">
-    <p class="text-sm text-accent">
+    <p class="md:text-sm text-xs text-accent">
       <span v-if="githubCommits !== null">{{ githubCommits }} total GitHub commits this year</span>
       <span v-else>Loading commits...</span>
     </p>
-    <p class="text-sm">Current time: {{ currentTime }}</p>
-    <p class="text-sm">&copy; {{ new Date().getFullYear() }} Simon Jobbágy. All rights reserved.</p>
+    <p class="md:text-sm text-xs ">Current time: {{ currentTime }}</p>
+    <p class="md:text-sm text-xs ">&copy; {{ new Date().getFullYear() }} Simon Jobbágy. All rights reserved.</p>
   </footer>
 </template>
 

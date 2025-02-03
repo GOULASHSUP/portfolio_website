@@ -56,7 +56,7 @@
                     </div>
                   </dl>
                 </a>
-                <div class="relative block overflow-hidden rounded-md p-4 sm:p-6 lg:p-8 bg-gradient-to-b from-zinc-800 via-zinc-900 to-zinc-900">
+                <div class="relative block overflow-hidden rounded-md p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900">
                   <h3 class="text-lg font-bold text-zinc-300 sm:text-2xl">
                     My Skills
                   </h3>
@@ -70,6 +70,7 @@
                     <li>Development: <span class="text-accent">Node.js, Express.js</span></li>
                     <li>Databases: <span class="text-accent">Firebase, MongoDB, MySQL</span></li>
                     <li>CMS: <span class="text-accent">WordPress</span></li>
+                    <li>Game Development: <span class="text-accent">Unity, Blender</span></li>
                   </ul>
                 </div>
               </div>
@@ -119,7 +120,7 @@
             </h1>
             <transition name="fade">
               <div v-if="showOpen === 'contact'" class="mt-4">
-                <div class="w-full p-4 text-left rounded-md sm:p-8 bg-gradient-to-b from-zinc-800 via-zinc-900 to-zinc-900">
+                <div class="w-full p-4 text-left rounded-md sm:p-8 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900">
                   <p class="mb-5 text-base text-zinc-200 sm:text-lg">
                     Feel free to reach out through any of the contact options below or for more information about me, download my cv.
                   </p>
