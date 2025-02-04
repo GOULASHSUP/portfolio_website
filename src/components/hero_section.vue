@@ -78,38 +78,32 @@
           </div>
           
           <div>
-            <h1 
-              class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent" 
-              :class="{ 'text-accent': showOpen === 'projects' }" 
-              @click="toggleSection('projects')"
-            >
+            <h1 class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent" 
+                :class="{ 'text-accent': showOpen === 'projects' }" 
+                @click="toggleSection('projects')">
               Projects
             </h1>
             <transition name="fade">
               <div v-if="showOpen === 'projects'" class="mt-4">
                 <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div v-for="(project, index) in projects" :key="index" class="rounded-md shadow-sm bg-zinc-800">
-                        <a href="#">
-                            <img :src="project.image" class="rounded-t-md" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-zinc-300">{{ project.title }}</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-zinc-400 line-clamp-2">{{ project.description }}</p>
-                            <a href="#" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
-                                Read more
-                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                                </svg>
-                            </a>
-                        </div>
+                  <div v-for="(project, index) in globalState.projects" :key="index" class="rounded-md shadow-sm bg-zinc-800">
+                    <img :src="project.image" class="rounded-t-md" alt="" />
+                    <div class="p-5">
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-zinc-300">{{ project.title }}</h5>
+                      <p class="mb-3 font-normal text-zinc-400 line-clamp-2">{{ project.description }}</p>
+                      <router-link :to="'/project/' + project.slug"
+                        class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                        Read more
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pl-2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                      </router-link>
                     </div>
+                  </div>
                 </div>
               </div>
             </transition>
           </div>
-          
           <div>
             <h1 
               class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent" 
@@ -139,7 +133,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
                       </svg>
                       <div class="ml-3">
-                        <div class="mb-1 text-xs">Check out my projects on:</div>
+                        <div class="mb-1 text-xs">Check out my:</div>
                         <div class="-mt-1 font-sans text-sm font-semibold">GitHub</div>
                       </div>
                     </a>
@@ -172,21 +166,14 @@
   </template>
   
   <script setup>
-  import { ref } from 'vue';
+  import { ref, inject } from 'vue';
+
+  const globalState = inject('globalState');
   
   const showOpen = ref(null);
-  
   const toggleSection = (section) => {
     showOpen.value = showOpen.value === section ? null : section;
   };
-  
-  const projects = ref([
-    { image: 'src/assets/placeholder.jpg', title: 'Cinema Backend Development', description: 'We created a fictional cinema with a simple CRUD backend useing PHP.'  },
-    { image: 'src/assets/placeholder.jpg', title: 'Project 2', description: 'This project is for the Hungarian organization FiKon. We designed and created a new website and established a new brand identity as well, while also build their social media presence.' },
-    { image: 'src/assets/placeholder.jpg', title: 'Project 3', description: 'This project is about a small example organization that needed a new website.'  },
-    { image: 'src/assets/placeholder.jpg', title: 'Project 4', description: 'This project is about a small example company that asked me for a specific case.'  },
-    { image: 'src/assets/placeholder.jpg', title: 'Project 5', description: 'This project is about a small example company that I worked for in 2021.'  },
-  ]);
   </script>
   
   <style scoped>
