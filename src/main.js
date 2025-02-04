@@ -32,6 +32,15 @@ const globalState = reactive({
       technologies: ['Vue.js', 'Tailwind CSS', 'Firebase', 'Adobe PhotoShop', 'Adobe Illustrator', 'Figma'], 
       liveLink: 'https://example.com/cinema-backend'
     },
+    { 
+      image: '/src/assets/placeholder.jpg', 
+      title: 'Example Nr. 2', 
+      slug: 'example 2', 
+      description: 'This project is for another Example company. They are really nice, and they are not real, since this is just an example...', 
+      technologies: ['Unity', 'Blender', 'C#'], 
+      liveLink: 'https://example.com/example2',
+      githubLink: 'https://example.com/cinema-backend'
+    },
   ]
 });
 
