@@ -4,7 +4,7 @@
         <div class="space-y-4">
           <div>
             <h1 
-              class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent" 
+              class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent transition-all duration-300 ease-in-out" 
               :class="{ 'text-accent': showOpen === 'about' }" 
               @click="toggleSection('about')"
             >
@@ -39,7 +39,7 @@
                   <div class="mt-4">
                     <p class="text-sm text-pretty text-zinc-400">
                       I am a passionate developer and designer from Hungary, living in Denmark. I graduated from Business Academy SouthWest (EASV) as a
-                      multimedia designer in 2024, and I am currently studying Web Development. I really like 3D design and cars, so feel free to talk about those with me!
+                      multimedia designer in 2024, and I am currently studying Web Development. I am also interested in 3D design and game development and I create 3D models in my freetime.
                     </p>
                   </div>
                   
@@ -78,7 +78,7 @@
           </div>
           
           <div>
-            <h1 class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent" 
+            <h1 class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent transition-all duration-300 ease-in-out" 
                 :class="{ 'text-accent': showOpen === 'projects' }" 
                 @click="toggleSection('projects')">
               Projects
@@ -92,7 +92,7 @@
                       <h5 class="mb-2 text-2xl font-bold tracking-tight text-zinc-300">{{ project.title }}</h5>
                       <p class="mb-3 font-normal text-zinc-400 line-clamp-2">{{ project.description }}</p>
                       <router-link :to="'/project/' + project.slug"
-                        class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                        class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
                         Read more
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pl-2">
                           <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
@@ -102,9 +102,9 @@
                   </div>
                   <div class="rounded-md shadow-sm bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900 flex flex-col items-center justify-center text-center p-6">
                     <h5 class="mb-2 sm:text-2xl text-xl font-semibold tracking-tight text-zinc-300">Your Project Comes Here!</h5>
-                    <p class="mb-4 text-zinc-400">Have an idea that you would like to create? Just add your idea with the plus icon below and contact me with the details!</p>
+                    <p class="mb-4 text-zinc-400">Have an idea that you would like to create? Just add it with the plus icon below and contact me with the details!</p>
                     <a href="mailto:jobbagy.simon@gmail.com"
-                      class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                      class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                       </svg>
@@ -116,7 +116,7 @@
           </div>
           <div>
             <h1 
-              class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent" 
+              class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent transition-all duration-300 ease-in-out" 
               :class="{ 'text-accent': showOpen === 'contact' }" 
               @click="toggleSection('contact')"
             >
@@ -129,7 +129,7 @@
                     Feel free to reach out through any of the contact options below, or for more information about me, download my CV.
                   </p>
                   <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="mailto:your.email@example.com" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                    <a href="mailto:jobbagy.simon@gmail.com" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" />
                       </svg>
@@ -138,7 +138,7 @@
                         <div class="-mt-1 font-sans text-sm font-semibold">jobbagy.simon@gmail.com</div>
                       </div>
                     </a>
-                    <a href="https://github.com/GOULASHSUP" target="_blank" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                    <a href="https://github.com/GOULASHSUP" target="_blank" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
                       </svg>
@@ -147,7 +147,7 @@
                         <div class="-mt-1 font-sans text-sm font-semibold">GitHub</div>
                       </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/simon-jobbágy/" target="_blank" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                    <a href="https://www.linkedin.com/in/simon-jobbágy/" target="_blank" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
                       </svg>
@@ -156,7 +156,7 @@
                         <div class="-mt-1 font-sans text-sm font-semibold">LinkedIn</div>
                       </div>
                     </a>
-                    <a href="/cv.pdf" download="cv.pdf" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5">
+                    <a href="/cv.pdf" download="cv.pdf" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                       </svg>
