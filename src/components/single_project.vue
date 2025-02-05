@@ -10,9 +10,11 @@
                         {{ project?.description || 'This project does not exist.' }}
                     </p>
                 </div>
-                <div class="order-1 lg:order-2 lg:sticky lg:top-24 self-start">
-                    <img v-if="project" :src="project.image" alt="Project image" 
-                        class="w-full max-h-[600px] object-cover rounded-md shadow-md" />
+                <div class="order-1 lg:order-2 lg:sticky lg:top-24 self-start w-full">
+                    <div class="w-full aspect-[16/10] bg-zinc-800 rounded-md shadow-md overflow-hidden">
+                        <img v-if="project" :src="project.image" alt="Project image"
+                            class="w-full h-full object-cover" />
+                    </div>
                 </div>
             </div>
             <div v-if="project?.technologies?.length">
