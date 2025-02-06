@@ -76,7 +76,6 @@
               </div>
             </transition>
           </div>
-          
           <div>
             <h1 class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent transition-all duration-300 ease-in-out" 
                 :class="{ 'text-accent': showOpen === 'projects' }" 
@@ -86,9 +85,9 @@
             <transition name="fade">
               <div v-if="showOpen === 'projects'" class="mt-4">
                 <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  <div v-for="(project, index) in globalState.projects" :key="index" class="rounded-md shadow-sm bg-zinc-800">
+                  <div v-for="(project, index) in globalState.projects" :key="index" class="rounded-md shadow-sm bg-zinc-800 group">
                     <div class="w-full aspect-[16/9] bg-zinc-700 rounded-t-md overflow-hidden">
-                      <img :src="project.image" class="w-full h-full object-cover" alt="" />
+                      <img :src="project.image" class="w-full h-full object-cover grayscale transition-all duration-300 ease-in-out group-hover:grayscale-0" alt="" />
                     </div>
                     <div class="p-5">
                       <h5 class="mb-2 text-2xl font-bold tracking-tight text-zinc-300">{{ project.title }}</h5>
