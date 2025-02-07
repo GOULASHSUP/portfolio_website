@@ -25,21 +25,28 @@ const globalState = reactive({
       socialMedia: 'https://www.facebook.com/fiatalok.konferenciaja'
     },
     { 
+      image: '/src/assets/vattenfall-project.png', 
+      title: 'Vattenfall – VR Demo', 
+      slug: 'vattenfall-vr-demo', 
+      description: 'Alongside my studies at EASV, I had the opportunity to work on an exciting side project through my Game Experiences class. I collaborated with Vattenfall, a Swedish company specializing in sustainable electricity and heating, to develop a VR training demo for their internal training materials.\n\nThe project involved creating an interactive and immersive VR experience in the Unity game engine, where users could navigate and complete tasks within a training environment. I received a 3D model of the facility where the training would take place and worked on enhancing its realism. My responsibilities included building functional VR controllers, optimizing materials, and developing additional assets to ensure a smooth and realistic experience.\n\nThe result was a walkable VR environment that allowed trainees to explore and interact with the space in a way that closely resembled real-life scenarios. This project gave me valuable hands-on experience in VR development, interactive design, and 3D asset optimization and creation, bridging the gap between technology and practical training solutions.', 
+      technologies: ['Unity', 'Unity Asset Store', 'Blender', 'VRTK', 'C#'], 
+    },
+    { 
       image: '/src/assets/gg-project.png', 
       title: 'GG Beauty Salon', 
       slug: 'gg-beauty-salon', 
       description: 'As part of our third semester project in the Multimedia Design program, my teammate and I collaborated on developing a WordPress and PHP-based website for a beauty salon in Veszprém, Hungary. The project had two key areas: website development and branding. While I contributed to both, my primary focus was research-driven design decisions, while my teammate handled the technical development of the site.\n\nResearch & Strategy\n\nTo create a user-friendly and competitive website, we conducted extensive UX and UI research. Our process included:\n– Competitor Analysis: We analyzed the top beauty salons in Veszprém, identifying their strengths and weaknesses. This allowed us to develop a strategic plan to differentiate our client.\n– Brand Identity & Mood Board: Based on the research, we designed a comprehensive brand guide that defined the visual identity, color schemes, and typography. We worked closely with the client to ensure the brand aligned with their vision.\n– SEO Optimization: Using SEMRush, we conducted in-depth keyword research to improve the salon’s search engine visibility. These insights were applied throughout the website’s content, helping the salon gain a competitive edge online.\n\nWebsite Features & Development\n\nThe final website was designed to be modern, user-friendly, and conversion-focused, with:Intuitive Navigation – A structured menu highlighting all services in a clear, accessible way. Blog Integration – A content section where the salon owners can post articles about services and beauty tips, improving their SEO ranking. Dynamic Gallery – A customizable gallery showcasing their work, salon atmosphere, and client transformations. Responsive & SEO-Optimized Design – Ensuring smooth usability on all devices while implementing best practices for search visibility.\n\nThis project not only strengthened my skills in research-driven design and branding but also provided real-world experience in SEO, UX/UI research and design, analysis, and client collaboration.', 
-      technologies: ['InDesign', 'Photoshop', 'Semrush', 'Google Ads', 'WordPress', 'Tailwind', 'Adobe XD'], 
+      technologies: ['InDesign', 'PhotoShop', 'Semrush', 'Google Ads', 'WordPress', 'Tailwind', 'Adobe XD'], 
       liveLink: 'https://www.ggszepsegstudio.hu/',
     },
     { 
-      image: '/src/assets/placeholder.jpg', 
-      title: 'Example Nr. 2', 
-      slug: 'example 2', 
-      description: 'This project is for another Example company. They are really nice, and they are not real, since this is just an example...', 
-      technologies: ['Unity', 'Blender', 'C#'], 
-      liveLink: 'https://example.com/example2',
-      githubLink: 'https://example.com/cinema-backend'
+      image: '/src/assets/kanten-project.png', 
+      title: 'Kanten', 
+      slug: 'kanten', 
+      description: 'In the second-semester of Multimedia Design, our team of four collaborated to create a comprehensive digital presence for Kanten, a nightclub in Esbjerg, Denmark. Kanten is known for hosting a diverse range of music events, featuring an extensive artist lineup catering to the city’s vibrant nightlife scene.\n\nOur project encompassed website development, branding, and digital marketing assets, including:\n– A modern website reflecting Kanten’s identity while incorporating contemporary UX/UI principles.\n– Social media guidelines and templates to maintain a consistent brand presence.\n– Physical promotional materials aligned with the club’s branding.\n\nAlthough our proposed design was ultimately not selected as their live site, the project provided us with valuable experience in user research, design thinking, and frontend development. We applied data-driven UX/UI methodologies, conducted audience research, and developed a site that effectively balanced aesthetics with functionality.\n\nThe website was built using Vue.js for the frontend and Firebase for database management, allowing for dynamic content updates and streamlined event organization.', 
+      technologies: ['PhotoShop', 'Illustrator', 'Indesign', 'Vue.js', 'Firebase'], 
+      liveLink: 'https://kanten-c95d9.web.app/',
+      githubLink: 'https://github.com/TLNRB/kanten'
     },
   ]
 });

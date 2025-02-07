@@ -5,7 +5,7 @@
       <span v-else>Loading commits...</span>
     </p>
     <p class="md:text-sm text-xs ">Current time: {{ currentTime }}</p>
-    <p class="md:text-sm text-xs ">&copy; {{ new Date().getFullYear() }} Simon Jobbágy. All rights reserved.</p>
+    <p class="md:text-sm text-xs ">&copy; {{ new Date().getFullYear() }} Made by: Simon Jobbágy. All rights reserved.</p>
   </footer>
 </template>
 
