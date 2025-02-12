@@ -25,6 +25,14 @@ const globalState = reactive({
       socialMedia: 'https://www.facebook.com/fiatalok.konferenciaja'
     },
     { 
+      image: '/src/assets/tmt-project.png', 
+      title: 'TMT – SoMe Management', 
+      slug: 'tmt-some-management', 
+      description: 'During my internship at Marketing Puzzle, a Hungarian marketing agency, I was responsible for managing the social media presence of TMT (Több Mint Tüzép – More Than Building Materials). My role focused on content creation, strategy development, and analytics, helping to enhance brand visibility and engagement across multiple platforms.\n\nI designed and scheduled social media posts tailored to the brand’s identity, ensuring consistency in messaging and visuals. Using tools like Canva, Illustrator, and Photoshop, I developed engaging graphics and videos to align with marketing objectives. Additionally, I managed content distribution across Facebook, Instagram, Pinterest, and LinkedIn, utilizing Metricool and Meta Business Suite to track engagement, analyze performance, and optimize content strategies.\n\nThis experience deepened my understanding of digital marketing, content strategy, and audience engagement. I gained hands-on expertise in graphic design, copywriting, and data-driven decision-making, refining my ability to create and execute effective social media campaigns.', 
+      technologies: ['Canva', 'Illustrator', 'Photoshop', 'Metricool', 'Meta Business Suite'], 
+      socialMedia: 'https://www.facebook.com/tobbminttuzep'
+    },
+    { 
       image: '/src/assets/vattenfall-project.png', 
       title: 'Vattenfall – VR Demo', 
       slug: 'vattenfall-vr-demo', 

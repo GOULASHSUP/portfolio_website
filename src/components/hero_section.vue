@@ -30,7 +30,7 @@
                     <div class="hidden sm:block sm:shrink-0">
                       <img
                         alt=""
-                        src="/src/assets/profile.jpeg"
+                        src="/src/assets/profile.png"
                         class="size-20 rounded-md object-cover shadow-sm"
                       />
                     </div>
@@ -158,7 +158,7 @@
                         <div class="-mt-1 font-sans text-sm font-semibold">LinkedIn</div>
                       </div>
                     </a>
-                    <a href="/cv.pdf" download="cv.pdf" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
+                    <a href="/simon-jobbagy-cv.pdf" download="simon-jobbagy-cv.pdf" class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                       </svg>
