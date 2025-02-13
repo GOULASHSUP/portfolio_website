@@ -69,12 +69,10 @@
 </template>
 
 <script setup>
-import { inject, computed } from 'vue';
+import { computed } from 'vue';
 import { useRoute } from 'vue-router';
-
-const globalState = inject('globalState');
+import { projects } from '@/projects.js';
 
 const route = useRoute();
-
-const project = computed(() => globalState.projects.find(p => p.slug === route.params.slug));
+const project = computed(() => projects.find(p => p.slug === route.params.slug));
 </script>

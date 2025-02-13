@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HeroSection from '/src/components/hero_section.vue';
-import SingleProject from '/src/components/single_project.vue';
+import { createRouter, createWebHistory } from "vue-router";
+import HeroSection from "@/components/hero_section.vue";
+import SingleProject from "@/components/single_project.vue";
 
 const routes = [
-    { path: '/', component: HeroSection },
-    { path: '/project/:slug', component: SingleProject, props: true }
+    { path: "/", component: HeroSection },
+    { path: "/project/:slug", component: SingleProject, props: true }
 ];
 
 const router = createRouter({
