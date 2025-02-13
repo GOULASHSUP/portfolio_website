@@ -39,7 +39,7 @@
                   <div class="mt-4">
                     <p class="text-sm text-pretty text-zinc-400">
                       I am a passionate developer and designer from Hungary, living in Denmark. I graduated from Business Academy SouthWest (EASV) as a
-                      multimedia designer in 2024, and I am currently studying Web Development. I am also interested in 3D design and game development and I create 3D models in my freetime.
+                      multimedia designer in 2024, and I am currently studying Web Development. I am also interested in 3D design and game development and I create 3D models in my free time.
                     </p>
                   </div>
                   
@@ -64,13 +64,11 @@
                   <p class="mt-1 text-sm font-medium text-zinc-400">Tools & Technologies I work with:</p>
                   
                   <ul class="mt-4 space-y-2 text-sm text-zinc-400">
-                    <li>Styling & Structure Essentials: <span class="text-accent">HTML, CSS, Tailwind</span></li>
-                    <li>Frontend Development Stack: <span class="text-accent">JavaScript, TypeScript, Vue.js</span></li>
-                    <li>Scripting: <span class="text-accent">PHP</span></li>
-                    <li>Development: <span class="text-accent">Node.js, Express.js</span></li>
-                    <li>Databases: <span class="text-accent">Firebase, MongoDB, MySQL</span></li>
-                    <li>CMS: <span class="text-accent">WordPress</span></li>
-                    <li>Game Development: <span class="text-accent">Unity, Blender</span></li>
+                    <li>Frontend Development: <span class="text-accent">HTML, CSS, Tailwind CSS, JavaScript, TypeScript, Vue.js</span></li>
+                    <li>Backend Development: <span class="text-accent">PHP, Node.js, Express.js</span></li>
+                    <li>Database: <span class="text-accent">MySQL, MongoDB, Firebase</span></li>
+                    <li>Content Management Systems: <span class="text-accent">WordPress</span></li>
+                    <li>Game Development <span class="text-accent">Unity, Blender</span></li>
                   </ul>
                 </div>
               </div>
@@ -103,7 +101,7 @@
                   </div>
                   <div class="rounded-md shadow-sm bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900 flex flex-col items-center justify-center text-center p-6">
                     <h5 class="mb-2 sm:text-2xl text-xl font-semibold tracking-tight text-zinc-300">Your Project Comes Here!</h5>
-                    <p class="mb-4 text-zinc-400">Have an idea that you would like to create? Just add it with the plus icon below and contact me with the details!</p>
+                    <p class="mb-4 text-zinc-400">Have an idea you’d like to bring to life? Click the plus icon below and reach out to me with the details!</p>
                     <a href="mailto:jobbagy.simon@gmail.com"
                       class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
