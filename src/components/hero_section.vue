@@ -99,6 +99,16 @@
                       </router-link>
                     </div>
                   </div>
+                  <div class="rounded-md shadow-sm bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900 flex flex-col items-center justify-center text-center p-6">
+                    <h5 class="mb-2 sm:text-2xl text-xl font-semibold tracking-tight text-zinc-300">Your Project Comes Here!</h5>
+                    <p class="mb-4 text-zinc-400">Have an idea you’d like to bring to life? Click the plus icon below and reach out to me with the details!</p>
+                    <a href="mailto:jobbagy.simon@gmail.com"
+                      class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                      </svg>
+                    </a>
+                  </div>
                 </div>
               </div>
             </transition>
