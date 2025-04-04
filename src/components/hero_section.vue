@@ -2,6 +2,7 @@
       <section class="flex flex-col items-center justify-center min-h-screen w-full bg-zinc-900 text-zinc-300 p-6">
         <div class="text-left w-full max-w-7xl">
           <div class="space-y-4">
+          <!-- About -->
             <div>
               <h1 
                 class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent transition-all duration-300 ease-in-out" 
@@ -74,45 +75,81 @@
                 </div>
               </transition>
             </div>
+          <!-- Projects -->
             <div>
-            <h1 class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent transition-all duration-300 ease-in-out" 
-                :class="{ 'text-accent': showOpen === 'projects' }" 
-                @click="toggleSection('projects')">
-              Projects
-            </h1>
-            <transition name="fade">
-              <div v-if="showOpen === 'projects'" class="mt-4">
-                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  <div v-for="(project, index) in projects" :key="index" class="rounded-md shadow-sm bg-zinc-800 group">
-                    <div class="w-full aspect-[16/9] bg-zinc-700 rounded-t-md overflow-hidden">
-                      <img :src="project.image" class="w-full h-full object-cover grayscale transition-all duration-300 ease-in-out group-hover:grayscale-0" alt="" />
+              <h1
+                class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent transition-all duration-300 ease-in-out"
+                :class="{ 'text-accent': showOpen === 'projects' }"
+                @click="toggleSection('projects')"
+              >
+                Projects
+              </h1>
+              <transition name="fade">
+                <div v-if="showOpen === 'projects'" class="mt-4">
+                  <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div
+                      v-for="(project, index) in projects"
+                      :key="index"
+                      class="relative rounded-md shadow-sm bg-zinc-800 group"
+                    >
+                      <div v-if="project.status" 
+                          class="absolute top-2 right-2 bg-accent text-zinc-900 text-xs font-bold rounded-md px-2 py-1 z-10">
+                        {{ project.status }}
+                      </div>
+                      <div class="w-full aspect-[16/9] bg-zinc-700 rounded-t-md overflow-hidden">
+                        <img
+                          :src="project.image"
+                          class="w-full h-full object-cover grayscale transition-all duration-300 ease-in-out group-hover:grayscale-0"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-5">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-zinc-300">{{ project.title }}</h5>
+                        <p class="mb-3 font-normal text-zinc-400 line-clamp-2">{{ project.description }}</p>
+                        <router-link
+                          :to="'/project/' + project.slug"
+                          class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out"
+                        >
+                          Read more
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6 pl-2"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                          </svg>
+                        </router-link>
+                      </div>
                     </div>
-                    <div class="p-5">
-                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-zinc-300">{{ project.title }}</h5>
-                      <p class="mb-3 font-normal text-zinc-400 line-clamp-2">{{ project.description }}</p>
-                      <router-link :to="'/project/' + project.slug"
-                        class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
-                        Read more
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pl-2">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    <div
+                      class="rounded-md shadow-sm bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900 flex flex-col items-center justify-center text-center p-6"
+                    >
+                      <h5 class="mb-2 sm:text-2xl text-xl font-semibold tracking-tight text-zinc-300">Your Project Comes Here!</h5>
+                      <p class="mb-4 text-zinc-400">Have an idea you’d like to bring to life? Click the plus icon below and reach out to me with the details!</p>
+                      <a
+                        href="mailto:jobbagy.simon@gmail.com"
+                        class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                         </svg>
-                      </router-link>
+                      </a>
                     </div>
-                  </div>
-                  <div class="rounded-md shadow-sm bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900 flex flex-col items-center justify-center text-center p-6">
-                    <h5 class="mb-2 sm:text-2xl text-xl font-semibold tracking-tight text-zinc-300">Your Project Comes Here!</h5>
-                    <p class="mb-4 text-zinc-400">Have an idea you’d like to bring to life? Click the plus icon below and reach out to me with the details!</p>
-                    <a href="mailto:jobbagy.simon@gmail.com"
-                      class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                      </svg>
-                    </a>
                   </div>
                 </div>
-              </div>
-            </transition>
-          </div>
+              </transition>
+            </div>
+          <!-- Contact info -->
             <div>
               <h1 
                 class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent transition-all duration-300 ease-in-out" 

@@ -9,6 +9,14 @@
                     <p class="sm:text-lg text-sm text-zinc-300 mb-6 max-w-5xl whitespace-pre-line">
                         {{ project?.description || 'This project does not exist.' }}
                     </p>
+                    <div v-if="project?.status === 'In Progress'" class="my-6 p-2.5 px-4 bg-accent rounded-md shadow-md flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-zinc-900">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+                        </svg>
+                        <p class="text-zinc-900 text-md">
+                            This project is currently in progress! Some features may not be available yet.
+                        </p>
+                    </div>
                 </div>
                 <div class="order-1 lg:order-2 lg:sticky lg:top-24 self-start w-full">
                     <div class="w-full aspect-[16/10] bg-zinc-800 rounded-md shadow-md overflow-hidden">
