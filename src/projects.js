@@ -9,7 +9,7 @@ import underConstruction from "@/assets/under-construction.jpg";
 export const projects = [
   { 
     image: underConstruction, 
-    title: "OnlyFails API and frontend", 
+    title: "OnlyFails API and Frontend", 
     slug: "onlyfails-api", 
     description: "OnlyFails is a full-stack web application built with TypeScript, Express, MongoDB and Node, showcasing a fictional Museum of Failed Products. It allows users to explore, comment, and vote on infamous failed products from history. Admins can manage products, categories, and users, providing a dynamic and interactive experience for discovering the lessons behind some of the most notable product failures.\n\nThis project highlights my skills in building REST APIs, implementing authentication, handling CRUD operations, and creating a responsive frontend using modern technologies.\n\nIn the future, I plan to implement a simple React-based frontend where both admins and end-users can interact seamlessly with the API, enhancing the user experience and providing intuitive management tools.",
     technologies: ["TypeScript", "MongoDB", "Node", "Express", "REST API", "CI/CD", "GitHub Actions", "Playwright", "Postman", "Swagger"], 

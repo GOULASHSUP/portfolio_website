@@ -1,7 +1,18 @@
 <template>
   <footer class="bg-zinc-800 text-zinc-400 py-6 px-6 lg:px-24 flex flex-col sm:flex-row items-start sm:items-center justify-between text-left gap-2 sm:gap-4">
     <p class="md:text-sm text-xs text-accent">
-      <span v-if="githubCommits !== null">{{ githubCommits }} total GitHub commits this year</span>
+      <span v-if="githubCommits !== null">
+        {{ githubCommits }} total 
+        <a 
+          href="https://github.com/GOULASHSUP" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="text-accent hover:text-zinc-200 transition duration-300 ease-in-out"
+        >
+          GitHub
+        </a> 
+        commits this year
+      </span>
       <span v-else>Loading commits...</span>
     </p>
     <p class="md:text-sm text-xs ">Current time: {{ currentTime }}</p>
