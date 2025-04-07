@@ -6,7 +6,6 @@ import ggProject from "@/assets/gg-project.png";
 import kantenProject from "@/assets/kanten-project.png";
 import underConstruction from "@/assets/under-construction.jpg";
 import gatesnfencesProject from "@/assets/gatesnfences-project.png";
-import { prototype } from "postcss/lib/previous-map";
 
 export const projects = [
 { 
