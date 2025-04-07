@@ -5,9 +5,11 @@ import vattenfallProject from "@/assets/vattenfall-project.png";
 import ggProject from "@/assets/gg-project.png";
 import kantenProject from "@/assets/kanten-project.png";
 import underConstruction from "@/assets/under-construction.jpg";
+import gatesnfencesProject from "@/assets/gatesnfences-project.png";
+import { prototype } from "postcss/lib/previous-map";
 
 export const projects = [
-  { 
+{ 
     image: underConstruction, 
     title: "OnlyFails API and Frontend", 
     slug: "onlyfails-api", 
@@ -15,8 +17,8 @@ export const projects = [
     technologies: ["TypeScript", "MongoDB", "Node", "Express", "REST API", "CI/CD", "GitHub Actions", "Playwright", "Postman", "Swagger"], 
     githubLink: "https://github.com/GOULASHSUP/only-fails-api", 
     status: 'In Progress'
-  },
-  { 
+},
+{ 
     image: cinemaProject, 
     title: "Cinema Backend Development", 
     slug: "cinema-backend", 
@@ -24,8 +26,8 @@ export const projects = [
     technologies: ["PHP", "MySQL", "Tailwind CSS", "JavaScript", "MVC Pattern", "OOP"], 
     githubLink: "https://github.com/noravitkai/DWP-project", 
     status: ''
-  },
-  { 
+},
+{ 
     image: fikonProject, 
     title: "FiKon – Branding & Development", 
     slug: "fikon-branding-and-development", 
@@ -34,8 +36,8 @@ export const projects = [
     liveLink: "https://fikon.hu/",
     socialMedia: "https://www.facebook.com/fiatalok.konferenciaja",
     status: ''
-  },
-  { 
+},
+{ 
     image: tmtProject, 
     title: "TMT – SoMe Management", 
     slug: "tmt-some-management", 
@@ -43,16 +45,26 @@ export const projects = [
     technologies: ["Canva", "Illustrator", "Photoshop", "Metricool", "Meta Business Suite"], 
     socialMedia: "https://www.facebook.com/tobbminttuzep",
     status: ''
-  },
-  { 
+},
+{ 
+    image: gatesnfencesProject, 
+    title: "Gates & Fences – UX/UI Redesign", 
+    slug: "gates-n-fences-redesign", 
+    description: "As part of my Web Development education’s 1st semester in my UX/UI class, I undertook a comprehensive redesign of Gates n Fences’ outdated website with a strong focus on enhancing usability, aesthetics, accessibility, and overall user experience. The redesign process was structured around modern UX/UI principles aimed at providing a seamless and engaging experience for users. During the redesign process in Figma I focused on:\n\n- Minimalistic Design: Implementing a clean, uncluttered interface to promote clarity, improve readability, and direct user attention to essential elements.\n- Reducing Cognitive Load: Utilizing clear visual hierarchy, appropriate spacing, and familiar patterns to streamline navigation and prevent information overload.\n- Reusable Components: Designing modular UI elements such as buttons, cards, and navigation menus to ensure consistency, scalability, and maintainability throughout the site.\n- Clear Navigation: Establishing intuitive information architecture and logical user flow, enhancing accessibility and discoverability of content.\n- User-Centered Design: Crafting user-friendly interfaces through wireframes, prototypes, and usability testing to validate design decisions and enhance user satisfaction.\n\nI applied modern design principles such as simplicity, consistency, and visual balance, along with a modular approach to create a cohesive and adaptable interface. Leveraging typography, color theory, and spacing effectively, I enhanced the site’s visual hierarchy and overall aesthetics. The redesigned website now offers a smooth, intuitive user experience where visitors can effortlessly navigate and interact with content.",
+    technologies: ["Figma", "Photoshop", "UX/UI", "Prototype"], 
+    liveLink: "https://www.gatesnfences.com/",
+    prototype: "https://www.figma.com/proto/7zYPDg1vIk9soPuPUcWThS/Gates-and-Fences?page-id=0%3A1&node-id=1-2&p=f&viewport=-1976%2C-4436%2C0.68&t=skCYFHwMg1phH2AT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+    status: ''
+},
+{ 
     image: vattenfallProject, 
     title: "Vattenfall – VR Demo", 
     slug: "vattenfall-vr-demo", 
     description: "Alongside my studies at EASV, I had the opportunity to work on an exciting side project through my Game Experiences class. I collaborated with Vattenfall, a Swedish company specializing in sustainable electricity and heating, to develop a VR training demo for their internal training materials.\n\nThe project involved creating an interactive and immersive VR experience in the Unity game engine, where users could navigate and complete tasks within a training environment. I received a 3D model of the facility where the training would take place and worked on enhancing its realism. My responsibilities included building functional VR controllers, optimizing materials, and developing additional assets to ensure a smooth and realistic experience.\n\nThe result was a walkable VR environment that allowed trainees to explore and interact with the space in a way that closely resembled real-life scenarios. This project gave me valuable hands-on experience in VR development, interactive design, and 3D asset optimization and creation, bridging the gap between technology and practical training solutions.",
     technologies: ["Unity", "Unity Asset Store", "Blender", "VRTK", "C#"], 
     status: ''
-  },
-  { 
+},
+{ 
     image: ggProject, 
     title: "GG Beauty Salon", 
     slug: "gg-beauty-salon", 
@@ -60,8 +72,8 @@ export const projects = [
     technologies: ["InDesign", "Photoshop", "SEMRush", "Google Ads", "WordPress", "Tailwind CSS", "Adobe XD"], 
     liveLink: "https://www.ggszepsegstudio.hu/",
     status: ''
-  },
-  { 
+},
+{ 
     image: kantenProject, 
     title: "Kanten Nightclub Website", 
     slug: "kanten", 
@@ -70,5 +82,5 @@ export const projects = [
     liveLink: "https://kanten-c95d9.web.app/",
     githubLink: "https://github.com/TLNRB/kanten",
     status: ''
-  }
+}
 ];
