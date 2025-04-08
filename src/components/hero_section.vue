@@ -17,7 +17,7 @@
                     class="relative block overflow-hidden rounded-md p-4 sm:p-6 lg:p-8 bg-zinc-800"
                     >
                     <span
-                        class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-zinc-300 via-zinc-400 to-accent"
+                        class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-zinc-800 via-zinc-700 to-accent"
                     ></span>
                     
                     <div class="sm:flex sm:justify-between sm:gap-4">
@@ -57,7 +57,7 @@
                                         Multimedia Design @EASV
                                     </a>
                                 </dt>
-                                <dd class="text-xs font-medium text-zinc-300">Multimedia Design @EASV</dd>
+                                <dd class="text-xs font-medium text-zinc-300">Degrees</dd>
                             </div>
                         </div>
                         <div class="flex flex-col-reverse">
@@ -282,23 +282,23 @@
         </div>
     </section>
 </template>
-    
-    <script setup>
-    import { ref } from 'vue';
-    import { projects } from "@/projects.js";
-    
-    const showOpen = ref(null);
-    
-    const toggleSection = (section) => {
-        showOpen.value = showOpen.value === section ? null : section;
-    };
-    </script>
-    
-    <style scoped>
-    .fade-enter-active, .fade-leave-active {
-        transition: opacity 0.3s;
-    }
-    .fade-enter, .fade-leave-to {
-        opacity: 0;
-    }
-    </style>
+
+<script setup>
+import { ref } from 'vue';
+import { projects } from "@/projects.js";
+
+const showOpen = ref(null);
+
+const toggleSection = (section) => {
+    showOpen.value = showOpen.value === section ? null : section;
+};
+</script>
+
+<style scoped>
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+</style>

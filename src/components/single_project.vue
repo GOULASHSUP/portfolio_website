@@ -91,10 +91,24 @@
 </template>
 
 <script setup>
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
+import { computed, onMounted, nextTick } from 'vue';
+import { useRoute, onBeforeRouteUpdate } from 'vue-router';
 import { projects } from '@/projects.js';
 
 const route = useRoute();
 const project = computed(() => projects.find(p => p.slug === route.params.slug));
+
+// Function to always scroll to the top when a project is accessed (Only after if the page is loaded)
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+onMounted(async () => {
+    await nextTick();
+    scrollToTop();
+});
+
+onBeforeRouteUpdate(() => {
+    scrollToTop();
+});
 </script>
