@@ -6,6 +6,7 @@ import ggProject from "@/assets/gg-project.png";
 import kantenProject from "@/assets/kanten-project.png";
 import underConstruction from "@/assets/under-construction.jpg";
 import gatesnfencesProject from "@/assets/gatesnfences-project.png";
+import linedProject from "@/assets/lined-project.png";
 
 export const projects = [
 { 
@@ -15,6 +16,16 @@ export const projects = [
     description: "OnlyFails is a full-stack web application built with TypeScript, Express, MongoDB and Node, showcasing a fictional Museum of Failed Products. It allows users to explore, comment, and vote on infamous failed products from history. Admins can manage products, categories, and users, providing a dynamic and interactive experience for discovering the lessons behind some of the most notable product failures.\n\nThis project highlights my skills in building REST APIs, implementing authentication, handling CRUD operations, and creating a responsive frontend using modern technologies.\n\nIn the future, I plan to implement a simple React-based frontend where both admins and end-users can interact seamlessly with the API, enhancing the user experience and providing intuitive management tools.",
     technologies: ["TypeScript", "MongoDB", "Node", "Express", "REST API", "CI/CD", "GitHub Actions", "Playwright", "Postman", "Swagger"], 
     githubLink: "https://github.com/GOULASHSUP/only-fails-api", 
+    status: 'In Progress'
+},
+{ 
+    image: linedProject, 
+    title: "Lined – Socket.io Mini-game", 
+    slug: "lined-mini-game", 
+    description: "In the second semester of my Web Development program at EASV, during the Web Technologies course, my teammate and I developed a small real-time application using Socket.IO.\n\nThe application is a collaborative storytelling game where each player takes turns adding a sentence (maximum 75 characters) to a shared story visible to all active users. To prevent inactive players from stalling the game, we introduced a 30-second real-time countdown timer. If a player doesn’t submit a sentence in time, their turn is automatically passed to the next user.\n\n-Frontend: Built with React, Next.js, and styled using Tailwind CSS\n-Backend: Node.js with Express and Socket.io\n-Deployment: Frontend hosted on Vercel, backend on Render\n\nAll game logic is handled in-memory on the server, with no database connection. This means the story is lost if the server restarts or the game is reset. In future versions, we plan to:\n\n-Add story export functionality so users will be able to save their creations\n-Implement robust error handling\n-Refactor the frontend using reusable UI components\n\nThis project was (and still is) a great opportunity to explore websockets, real-time web communication, and full-stack deployment in a fun and engaging way.\n\nIMPORTANT: This projects backend is hosted on Render.com with a free plan, which means it may take up to 50 seconds to wake up when you first access the site.",
+    technologies: ["TypeScript", "React", "WebSockets", "Socket.io", "Next.js", "Express", "Vercel", "Render.com"], 
+    githubLink: "https://github.com/noravitkai/shared-story", 
+    liveLink: "https://lined-frontend.vercel.app/",
     status: 'In Progress'
 },
 { 
