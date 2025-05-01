@@ -1,5 +1,45 @@
-# Vue 3 + Vite
+# Simon Jobbágy – Portfolio Website
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welcome to the source code for my personal portfolio website!  
+Built with **Vue.js**, **Tailwind CSS**, and **Vite**, this project showcases my work, skills, and contact information in a clean and responsive interface.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Features
+
+- Interactive and accessible design
+- Dynamic project showcase
+- Fully responsive layout for all screen sizes
+- Styled with Tailwind CSS
+- No tracking, no cookies – just clean frontend
+
+## Technologies Used
+
+- **Vue 3 + Composition API**
+- **Tailwind CSS**
+- **Vite** for bundling
+
+## Project Structure
+
+```
+src/
+├── assets/              # Images and static files
+├── components/          # Vue components like navbar, hero section, etc.
+├── pages/               # (Optional) Page-based views
+├── projects.js          # Dynamic project data
+└── App.vue / main.js    # App root & entry point
+```
+
+## Live Site
+
+You can view the live version of the site here:  
+[simonjobbagy.com](https://simonjobbagy.com)
+
+## Contact
+
+Feel free to reach out:
+- **Email:** jobbagy.simon@gmail.com
+- **GitHub:** [GOULASHSUP](https://github.com/GOULASHSUP)
+- **LinkedIn:** [Simon Jobbágy](https://www.linkedin.com/in/simon-jobbágy/)
+
+---
+
+Thank you for checking out my work!
