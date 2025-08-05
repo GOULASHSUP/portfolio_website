@@ -92,6 +92,23 @@
                                 <dd class="text-xs font-medium text-zinc-300">Internship</dd>
                             </div>
                         </div>
+                        <div class="flex flex-col-reverse">
+                            <dt class="text-sm font-medium text-zinc-400">2025 Aug – Present</dt>
+                            <div class="flex flex-col-reverse">
+                                <dt class="text-sm font-medium text-accent flex items-center gap-2">
+                                    <span class="inline-block w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                                    <a 
+                                        href="https://grumsendev.dk/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        class="text-zinc-400 hover:text-accent transition duration-300 ease-in-out"
+                                    >
+                                        Intern @Grumsen
+                                    </a>
+                                </dt>
+                                <dd class="text-xs font-medium text-accent">Current Internship</dd>
+                            </div>
+                        </div>
                     </dl>
                     </div>
                     <div class="relative block overflow-hidden rounded-md p-4 sm:p-6 lg:p-8 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900 space-y-8">
