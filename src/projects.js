@@ -26,7 +26,7 @@ export const projects = [
     technologies: ["TypeScript", "React", "WebSockets", "Socket.io", "Next.js", "Express", "Vercel", "Render.com"], 
     githubLink: "https://github.com/noravitkai/shared-story", 
     liveLink: "https://lined-frontend.vercel.app/",
-    status: 'In Progress'
+    status: ''
 },
 { 
     image: cinemaProject, 
