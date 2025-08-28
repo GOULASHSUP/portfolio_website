@@ -63,7 +63,8 @@
                         <div class="flex flex-col-reverse">
                             <dt class="text-sm font-medium text-zinc-400">2024 – Present</dt>
                             <div class="flex flex-col-reverse">
-                                <dt class="text-sm font-medium text-zinc-400">
+                                <dt class="text-sm font-medium text-accent flex items-center gap-2">
+                                    <span class="inline-block w-2 h-2 rounded-full bg-accent animate-pulse"></span>
                                     <a 
                                         href="https://www.easv.dk/da/" 
                                         target="_blank" 
@@ -73,7 +74,7 @@
                                         Web Development @EASV
                                     </a>
                                 </dt>
-                                <dd class="text-xs font-medium text-zinc-300">Current Education</dd>
+                                <dd class="text-xs font-medium text-accent">Current Education</dd>
                             </div>
                         </div>
                         <div class="flex flex-col-reverse">
@@ -103,7 +104,7 @@
                                         rel="noopener noreferrer" 
                                         class="text-zinc-400 hover:text-accent transition duration-300 ease-in-out"
                                     >
-                                        Intern @Grumsen
+                                        Intern @Grumsen Development
                                     </a>
                                 </dt>
                                 <dd class="text-xs font-medium text-accent">Current Internship</dd>
@@ -120,9 +121,11 @@
                             <ul class="mt-4 space-y-2 text-sm text-zinc-400">
                                 <li>Frontend Development: <span class="text-accent">HTML, CSS, Tailwind CSS, JavaScript, TypeScript, Vue.js</span></li>
                                 <li>Backend Development: <span class="text-accent">PHP, Node.js, Express.js</span></li>
-                                <li>Database: <span class="text-accent">MySQL, MongoDB, Firebase</span></li>
+                                <li>UX/UI: <span class="text-accent">Figma, Adobe XD, Adobe Photoshop, Adobe Illustrator</span></li>
+                                <li>Design Tools: <span class="text-accent">Adobe InDesign, Canva, Gimp, Photopea</span></li>
+                                <li>Databases: <span class="text-accent">MySQL, MongoDB, Firebase</span></li>
                                 <li>Content Management Systems: <span class="text-accent">WordPress</span></li>
-                                <li>Game Development: <span class="text-accent">Unity, Blender</span></li>
+                                <li>Game Development: <span class="text-accent">Unity, Blender, Meta Quest</span></li>
                             </ul>
                         </div>
                         <div>
@@ -132,6 +135,9 @@
                             
                             <p class="mt-1 text-sm font-medium text-zinc-400">Technologies and Concepts I'm currently exploring:</p>
                             <div class="mt-4 flex flex-wrap gap-3">
+                                <div class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5">
+                                    Jira
+                                </div>
                                 <div class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5">
                                     React
                                 </div>
