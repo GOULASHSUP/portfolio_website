@@ -175,6 +175,72 @@
                 </div>
                 </Transition>
             </div>
+        <!-- Internships -->
+            <div>
+                <h1
+                    class="text-3xl sm:text-6xl font-bold cursor-pointer hover:text-accent transition-all duration-300 ease-in-out"
+                    :class="{ 'text-accent': showOpen === 'internships' }"
+                    @click="toggleSection('internships')"
+                >
+                    Internships
+                </h1>
+                <Transition
+                    enter-active-class="transition-[max-height,opacity,transform] duration-300 ease-out"
+                    enter-from-class="max-h-0 opacity-0 -translate-y-1"
+                    enter-to-class="max-h-[2000px] opacity-100 translate-y-0"
+                    leave-active-class="transition-[max-height,opacity,transform] duration-300 ease-in"
+                    leave-from-class="max-h-[2000px] opacity-100 translate-y-0"
+                    leave-to-class="max-h-0 opacity-0 -translate-y-1"
+                >
+                <div v-if="showOpen === 'internships'" class="overflow-hidden mt-4">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <router-link
+                            v-for="(internship, index) in internships"
+                            :key="index"
+                            :to="'/internship/' + internship.slug"
+                            class="relative rounded-md shadow-sm bg-zinc-800 group block"
+                        >
+                            <div v-if="internship.status" 
+                                class="absolute top-2 right-2 bg-accent text-zinc-900 text-xs font-bold rounded-md px-2 py-1 z-10">
+                                {{ internship.status }}
+                            </div>
+                            <div v-if="internship.date" 
+                                class="absolute top-2 right-2 bg-zinc-900 text-zinc-300 text-xs font-bold rounded-md px-2 py-1 z-10">
+                                {{ internship.date }}
+                            </div>
+                            <div class="w-full aspect-[16/9] bg-zinc-700 rounded-t-md overflow-hidden">
+                                <img
+                                    :src="internship.image"
+                                    class="w-full h-full object-cover grayscale transition-all duration-300 ease-in-out group-hover:grayscale-0"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="p-5">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-zinc-300">{{ internship.title }}</h5>
+                                <p class="mb-3 font-normal text-zinc-400 line-clamp-2">{{ internship.description }}</p>
+                                <router-link
+                                    :to="'/internship/' + internship.slug"
+                                    @click.stop
+                                    class="bg-zinc-700 hover:bg-accent hover:text-zinc-900 hover:shadow-xl hover:shadow-yellow-400/20 text-zinc-200 rounded-md inline-flex items-center px-4 py-2.5 transition-all duration-300 ease-in-out mt-4"
+                                >
+                                    Read more
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="size-6 pl-2"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </router-link>
+                            </div>
+                        </router-link>
+                    </div>
+                </div>
+                </Transition>
+            </div>
         <!-- Projects -->
             <div>
                 <h1
@@ -330,6 +396,7 @@
 <script setup>
 import { ref } from 'vue';
 import { projects } from "@/projects.js";
+import { internships } from "@/internships.js";
 
 const showOpen = ref(null);
 
