@@ -1,7 +1,11 @@
 <template>
-  <navbar_section />
-  <router-view />
-  <footer_section />
+  <div class="min-h-screen flex flex-col">
+    <navbar_section />
+    <main class="flex-1 bg-zinc-900">
+      <router-view />
+    </main>
+    <footer_section />
+  </div>
 </template>
 
 <script setup>

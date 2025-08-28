@@ -1,7 +1,7 @@
 <template>
-    <section class="flex flex-col items-center justify-center min-h-screen w-full bg-zinc-900 text-zinc-300 p-6">
-        <div class="text-left w-full max-w-7xl">
-            <div class="space-y-4">
+    <section class="flex flex-col items-center justify-center h-full min-h-full w-full bg-zinc-900 text-zinc-300 p-6">
+        <div class="text-left w-full max-w-7xl h-full">
+            <div class="space-y-4 flex flex-col" :class="{ 'justify-center min-h-[80vh]': !showOpen }">
             <!-- About -->
             <div>
                 <h1 
@@ -11,8 +11,15 @@
                 >
                 About
                 </h1>
-                <transition name="fade">
-                <div v-if="showOpen === 'about'" class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <Transition
+                    enter-active-class="transition-[max-height,opacity,transform] duration-300 ease-out"
+                    enter-from-class="max-h-0 opacity-0 -translate-y-1"
+                    enter-to-class="max-h-[2000px] opacity-100 translate-y-0"
+                    leave-active-class="transition-[max-height,opacity,transform] duration-300 ease-in"
+                    leave-from-class="max-h-[2000px] opacity-100 translate-y-0"
+                    leave-to-class="max-h-0 opacity-0 -translate-y-1"
+                >
+                <div v-if="showOpen === 'about'" class="overflow-hidden mt-4 grid grid-cols-1 lg:grid-cols-2 gap-6">
                     <div
                     class="relative block overflow-hidden rounded-md p-4 sm:p-6 lg:p-8 bg-zinc-800"
                     >
@@ -166,7 +173,7 @@
                         </div>
                     </div>
                 </div>
-                </transition>
+                </Transition>
             </div>
         <!-- Projects -->
             <div>
@@ -177,8 +184,15 @@
                 >
                     Projects
                 </h1>
-                <transition name="fade">
-                <div v-if="showOpen === 'projects'" class="mt-4">
+                <Transition
+                    enter-active-class="transition-[max-height,opacity,transform] duration-300 ease-out"
+                    enter-from-class="max-h-0 opacity-0 -translate-y-1"
+                    enter-to-class="max-h-[2000px] opacity-100 translate-y-0"
+                    leave-active-class="transition-[max-height,opacity,transform] duration-300 ease-in"
+                    leave-from-class="max-h-[2000px] opacity-100 translate-y-0"
+                    leave-to-class="max-h-0 opacity-0 -translate-y-1"
+                >
+                <div v-if="showOpen === 'projects'" class="overflow-hidden mt-4">
                     <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         <router-link
                             v-for="(project, index) in projects"
@@ -242,7 +256,7 @@
                         </div>
                     </div>
                 </div>
-                </transition>
+                </Transition>
             </div>
         <!-- Contact info -->
             <div>
@@ -253,8 +267,15 @@
                 >
                     Contact
                 </h1>
-                <transition name="fade">
-                <div v-if="showOpen === 'contact'" class="mt-4">
+                <Transition
+                    enter-active-class="transition-[max-height,opacity,transform] duration-300 ease-out"
+                    enter-from-class="max-h-0 opacity-0 -translate-y-1"
+                    enter-to-class="max-h-[2000px] opacity-100 translate-y-0"
+                    leave-active-class="transition-[max-height,opacity,transform] duration-300 ease-in"
+                    leave-from-class="max-h-[2000px] opacity-100 translate-y-0"
+                    leave-to-class="max-h-0 opacity-0 -translate-y-1"
+                >
+                <div v-if="showOpen === 'contact'" class="overflow-hidden mt-4">
                     <div class="w-full p-4 text-left rounded-md sm:p-8 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900">
                         <p class="mb-5 text-base text-zinc-200 sm:text-lg">
                         Feel free to reach out through any of the contact options below, or for more information about me, download my CV.
@@ -299,7 +320,7 @@
                         </div>
                     </div>
                 </div>
-                </transition>
+                </Transition>
             </div>
             </div>
         </div>
@@ -316,12 +337,3 @@ const toggleSection = (section) => {
     showOpen.value = showOpen.value === section ? null : section;
 };
 </script>
-
-<style scoped>
-.fade-enter-active, .fade-leave-active {
-    transition: opacity 0.3s;
-}
-.fade-enter, .fade-leave-to {
-    opacity: 0;
-}
-</style>
