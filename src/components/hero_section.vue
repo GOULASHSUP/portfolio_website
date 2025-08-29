@@ -166,20 +166,20 @@
                     Tools & Technologies I work with:
                   </p>
                   <!-- Skills Toggle -->
-                  <div class="mt-4">
+                  <div class="mt-4 flex gap-6">
                     <div
                       role="tablist"
                       aria-label="Skills"
-                      class="flex flex-wrap gap-2"
+                      class="flex flex-col w-28 sm:w-36 md:w-40 overflow-hidden rounded-md border border-zinc-700/70 bg-zinc-800/60"
                     >
                       <button
                         @click="setActiveSkill('fe')"
                         :aria-selected="activeSkill === 'fe'"
-                        class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold"
+                        class="px-4 py-2 text-xs sm:text-sm font-semibold transition"
                         :class="
                           activeSkill === 'fe'
                             ? 'bg-accent text-zinc-900'
-                            : 'bg-zinc-700 text-zinc-200 hover:bg-zinc-600'
+                            : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
                         Frontend
@@ -187,11 +187,11 @@
                       <button
                         @click="setActiveSkill('be')"
                         :aria-selected="activeSkill === 'be'"
-                        class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold"
+                        class="px-4 py-2 text-xs sm:text-sm font-semibold transition border-t border-zinc-700/60"
                         :class="
                           activeSkill === 'be'
                             ? 'bg-accent text-zinc-900'
-                            : 'bg-zinc-700 text-zinc-200 hover:bg-zinc-600'
+                            : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
                         Backend
@@ -199,11 +199,11 @@
                       <button
                         @click="setActiveSkill('ux')"
                         :aria-selected="activeSkill === 'ux'"
-                        class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold"
+                        class="px-4 py-2 text-xs sm:text-sm font-semibold transition border-t border-zinc-700/60"
                         :class="
                           activeSkill === 'ux'
                             ? 'bg-accent text-zinc-900'
-                            : 'bg-zinc-700 text-zinc-200 hover:bg-zinc-600'
+                            : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
                         UX / UI
@@ -211,11 +211,11 @@
                       <button
                         @click="setActiveSkill('tools')"
                         :aria-selected="activeSkill === 'tools'"
-                        class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold"
+                        class="px-4 py-2 text-xs sm:text-sm font-semibold transition border-t border-zinc-700/60"
                         :class="
                           activeSkill === 'tools'
                             ? 'bg-accent text-zinc-900'
-                            : 'bg-zinc-700 text-zinc-200 hover:bg-zinc-600'
+                            : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
                         Design
@@ -223,11 +223,11 @@
                       <button
                         @click="setActiveSkill('db')"
                         :aria-selected="activeSkill === 'db'"
-                        class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold"
+                        class="px-4 py-2 text-xs sm:text-sm font-semibold transition border-t border-zinc-700/60"
                         :class="
                           activeSkill === 'db'
                             ? 'bg-accent text-zinc-900'
-                            : 'bg-zinc-700 text-zinc-200 hover:bg-zinc-600'
+                            : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
                         Databases
@@ -235,207 +235,85 @@
                       <button
                         @click="setActiveSkill('game')"
                         :aria-selected="activeSkill === 'game'"
-                        class="px-3 py-1.5 rounded-md text-xs sm:text-sm font-semibold"
+                        class="px-4 py-2 text-xs sm:text-sm font-semibold transition border-t border-zinc-700/60"
                         :class="
                           activeSkill === 'game'
                             ? 'bg-accent text-zinc-900'
-                            : 'bg-zinc-700 text-zinc-200 hover:bg-zinc-600'
+                            : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
                         Game Dev
                       </button>
                     </div>
 
-                    <div
-                      class="mt-4 rounded-md border border-zinc-700 bg-zinc-800/60 p-4"
-                    >
+                    <!-- Right: Skill chips -->
+                    <div class="flex-1">
                       <!-- Frontend -->
-                      <div v-if="activeSkill === 'fe'">
-                        <div class="flex flex-wrap gap-2">
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >HTML</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >CSS</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Tailwind CSS</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >JavaScript</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >TypeScript</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Vue.js</span
-                          >
-                        </div>
+                      <div
+                        v-if="activeSkill === 'fe'"
+                        class="flex flex-wrap gap-2"
+                      >
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">Tailwind CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">TypeScript</span>
+                        <span class="chip">Vue.js</span>
+                        <span class="chip">React</span>
+                        <span class="chip">Next.js</span>
+                        <span class="chip">Playwright</span>
                       </div>
 
                       <!-- Backend -->
-                      <div v-else-if="activeSkill === 'be'">
-                        <div class="flex flex-wrap gap-2">
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >PHP</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Node.js</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Express.js</span
-                          >
-                        </div>
+                      <div
+                        v-else-if="activeSkill === 'be'"
+                        class="flex flex-wrap gap-2"
+                      >
+                        <span class="chip">PHP</span>
+                        <span class="chip">Node.js</span>
+                        <span class="chip">Express.js</span>
                       </div>
 
                       <!-- UX / UI -->
-                      <div v-else-if="activeSkill === 'ux'">
-                        <div class="flex flex-wrap gap-2">
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Figma</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Adobe XD</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Photoshop</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Illustrator</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >InDesign</span
-                          >
-                        </div>
+                      <div
+                        v-else-if="activeSkill === 'ux'"
+                        class="flex flex-wrap gap-2"
+                      >
+                        <span class="chip">Figma</span>
+                        <span class="chip">Adobe XD</span>
+                        <span class="chip">Photoshop</span>
+                        <span class="chip">Illustrator</span>
+                        <span class="chip">InDesign</span>
                       </div>
 
-                      <!-- Tools & Platforms -->
-                      <div v-else-if="activeSkill === 'tools'">
-                        <div class="flex flex-wrap gap-2">
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Canva</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Gimp</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Photopea</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >WordPress</span
-                          >
-                        </div>
+                      <!-- Tools -->
+                      <div
+                        v-else-if="activeSkill === 'tools'"
+                        class="flex flex-wrap gap-2"
+                      >
+                        <span class="chip">Canva</span>
+                        <span class="chip">Gimp</span>
+                        <span class="chip">Photopea</span>
+                        <span class="chip">WordPress</span>
                       </div>
 
                       <!-- Databases -->
-                      <div v-else-if="activeSkill === 'db'">
-                        <div class="flex flex-wrap gap-2">
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >MySQL</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >MongoDB</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Firebase</span
-                          >
-                        </div>
+                      <div
+                        v-else-if="activeSkill === 'db'"
+                        class="flex flex-wrap gap-2"
+                      >
+                        <span class="chip">MySQL</span>
+                        <span class="chip">MongoDB</span>
+                        <span class="chip">Firebase</span>
                       </div>
 
-                      <!-- Game Development -->
-                      <div v-else>
-                        <div class="flex flex-wrap gap-2">
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Unity</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Blender</span
-                          >
-                          <span
-                            class="bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold"
-                            >Meta Quest</span
-                          >
-                        </div>
+                      <!-- Game Dev -->
+                      <div v-else class="flex flex-wrap gap-2">
+                        <span class="chip">Unity</span>
+                        <span class="chip">Blender</span>
+                        <span class="chip">Meta Quest</span>
+                        <span class="chip">WebGL</span>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <h3 class="text-lg font-bold text-zinc-300 sm:text-2xl">
-                    Currently Learning
-                  </h3>
-
-                  <p class="mt-1 text-sm font-medium text-zinc-400">
-                    Technologies and Concepts I'm currently exploring:
-                  </p>
-                  <div class="mt-4 flex flex-wrap gap-3">
-                    <div
-                      class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5"
-                    >
-                      Jira
-                    </div>
-                    <div
-                      class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5"
-                    >
-                      React
-                    </div>
-                    <div
-                      class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5"
-                    >
-                      Next.js
-                    </div>
-                    <div
-                      class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5"
-                    >
-                      Playwright
-                    </div>
-                    <div
-                      class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5"
-                    >
-                      CI/CD
-                    </div>
-                    <div
-                      class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5"
-                    >
-                      GitHub Actions
-                    </div>
-                    <div
-                      class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5"
-                    >
-                      Three.js
-                    </div>
-                    <div
-                      class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5"
-                    >
-                      WebGL
-                    </div>
-                    <div
-                      class="bg-zinc-700 text-accent text-sm font-semibold rounded-md px-3 py-1.5"
-                    >
-                      AR/VR Development
                     </div>
                   </div>
                 </div>
@@ -789,3 +667,9 @@ const toggleSection = (section) => {
   showOpen.value = showOpen.value === section ? null : section;
 };
 </script>
+
+<style>
+.chip {
+  @apply bg-zinc-700 text-zinc-200 px-3 py-1.5 rounded-md text-xs font-semibold;
+}
+</style>
