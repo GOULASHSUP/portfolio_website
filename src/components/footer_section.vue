@@ -1,22 +1,26 @@
 <template>
-  <footer class="bg-zinc-800 text-zinc-400 py-6 px-6 lg:px-24 flex flex-col sm:flex-row items-start sm:items-center justify-between text-left gap-2 sm:gap-4">
+  <footer
+    class="bg-zinc-900 text-zinc-400 py-10 sm:py-6 px-6 lg:px-24 flex flex-col sm:flex-row items-start sm:items-center justify-between text-left gap-2 sm:gap-4"
+  >
     <p class="md:text-sm text-xs text-accent">
       <span v-if="githubCommits !== null">
-        {{ githubCommits }} total 
-        <a 
-          href="https://github.com/GOULASHSUP" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        {{ githubCommits }} total
+        <a
+          href="https://github.com/GOULASHSUP"
+          target="_blank"
+          rel="noopener noreferrer"
           class="text-accent hover:text-zinc-200 transition duration-300 ease-in-out"
         >
           GitHub
-        </a> 
+        </a>
         commits this year
       </span>
       <span v-else>Loading commits...</span>
     </p>
-    <p class="md:text-sm text-xs ">Current time: {{ currentTime }}</p>
-    <p class="md:text-sm text-xs ">&copy; {{ new Date().getFullYear() }} – All rights reserved.</p>
+    <p class="md:text-sm text-xs">Current time: {{ currentTime }}</p>
+    <p class="md:text-sm text-xs">
+      &copy; {{ new Date().getFullYear() }} – All rights reserved.
+    </p>
   </footer>
 </template>
 
@@ -69,7 +73,7 @@ const fetchGitHubCommits = async () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${token}`
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify({ query }),
     });
@@ -82,9 +86,12 @@ const fetchGitHubCommits = async () => {
       return;
     }
 
-    const totalCommits = data.data.user.repositories.nodes.reduce((sum, repo) => {
-      return sum + (repo.defaultBranchRef?.target?.history?.totalCount || 0);
-    }, 0);
+    const totalCommits = data.data.user.repositories.nodes.reduce(
+      (sum, repo) => {
+        return sum + (repo.defaultBranchRef?.target?.history?.totalCount || 0);
+      },
+      0
+    );
 
     githubCommits.value = totalCommits;
   } catch (error) {

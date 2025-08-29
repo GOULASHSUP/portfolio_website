@@ -36,6 +36,7 @@ You can view the live version of the site here:
 ## Contact
 
 Feel free to reach out:
+
 - **Email:** jobbagy.simon@gmail.com
 - **GitHub:** [GOULASHSUP](https://github.com/GOULASHSUP)
 - **LinkedIn:** [Simon Jobbágy](https://www.linkedin.com/in/simon-jobbágy/)
