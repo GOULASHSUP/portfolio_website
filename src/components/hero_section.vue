@@ -14,7 +14,7 @@
             :class="{ 'text-accent': showOpen === 'about' }"
             @click="toggleSection('about')"
           >
-            About
+            {{ $t("about.title") }}
           </h1>
           <Transition
             enter-active-class="transition-[max-height,opacity,transform] duration-300 ease-out"
@@ -38,10 +38,10 @@
                 <div class="sm:flex sm:justify-between sm:gap-4">
                   <div>
                     <h3 class="text-lg font-bold text-zinc-300 sm:text-2xl">
-                      Hi! My name is Simon.
+                      {{ $t("about.introTitle") }}
                     </h3>
                     <p class="mt-1 text-sm font-medium text-zinc-400">
-                      Learn a little bit about me!
+                      {{ $t("about.introSub") }}
                     </p>
                   </div>
                   <div class="hidden sm:block sm:shrink-0">
@@ -160,10 +160,10 @@
               >
                 <div>
                   <h3 class="text-lg font-bold text-zinc-300 sm:text-2xl">
-                    My Skills
+                    {{ $t("skills.title") }}
                   </h3>
                   <p class="mt-1 text-sm font-medium text-zinc-400">
-                    Tools & Technologies I work with:
+                    {{ $t("skills.toolsText") }}
                   </p>
                   <!-- Skills Toggle -->
                   <div class="mt-4 flex gap-6">
@@ -658,7 +658,7 @@ import { projects } from "@/projects.js";
 import { internships } from "@/internships.js";
 
 const showOpen = ref(null);
-const activeSkill = ref("fe"); // fe | be | ux | tools | db | game
+const activeSkill = ref("fe");
 const setActiveSkill = (key) => {
   activeSkill.value = key;
 };

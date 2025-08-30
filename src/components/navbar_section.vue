@@ -2,11 +2,14 @@
   <nav
     class="bg-zinc-900 text-accent py-4 px-6 lg:px-24 flex justify-between items-center sticky top-0 z-50"
   >
+    <!-- Left: Logo -->
     <router-link to="/" class="text-md sm:text-xl font-bold">
-      Simon Jobbágy
+      <span class="sm:hidden">SJ</span>
+      <span class="hidden sm:inline">Simon Jobbágy</span>
     </router-link>
 
     <div class="relative flex items-center gap-3">
+      <!-- Open to work button -->
       <button
         v-if="isOpenToWork"
         @click="toggleOpenToWorkInfo"
@@ -34,12 +37,46 @@
           </a>
         </div>
       </button>
+
+      <!-- Language switcher -->
+      <div class="flex gap-1 bg-zinc-800 p-1 rounded-full">
+        <button
+          class="px-2 py-1 rounded-full text-xs transition"
+          :class="
+            currentLang === 'en'
+              ? 'bg-accent text-zinc-900 font-semibold'
+              : 'bg-zinc-800 text-zinc-200 hover:bg-zinc-700'
+          "
+          @click="setLang('en')"
+        >
+          EN
+        </button>
+        <button
+          class="px-2 py-1 rounded-full text-xs transition"
+          :class="
+            currentLang === 'hu'
+              ? 'bg-accent text-zinc-900 font-semibold'
+              : 'bg-zinc-800 text-zinc-200 hover:bg-zinc-700'
+          "
+          @click="setLang('hu')"
+        >
+          HU
+        </button>
+      </div>
     </div>
   </nav>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, onMounted, onUnmounted, computed } from "vue";
+import { i18n } from "@/i18n";
+
+const setLang = (lang) => {
+  i18n.global.locale.value = lang;
+  localStorage.setItem("lang", lang);
+};
+
+const currentLang = computed(() => i18n.global.locale.value);
 
 const showOpenToWorkInfo = ref(false);
 const toggleOpenToWorkInfo = () => {

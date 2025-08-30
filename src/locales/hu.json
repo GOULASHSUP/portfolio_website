@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "home": "Kezdőlap",
+    "about": "Rólam",
+    "projects": "Projektek",
+    "internships": "Gyakorlatok",
+    "contact": "Kapcsolat"
+  },
+  "about": {
+    "title": "Rólam",
+    "introTitle": "Szia! Simon vagyok.",
+    "introSub": "Ismerj meg egy kicsit jobban!"
+  },
+  "skills": {
+    "title": "Képességeim",
+    "toolsText": "Eszközök és technológiák, amikkel dolgozom:"
+  },
+  "learning": { "title": "Jelenleg tanulom" },
+  "ctas": { "readMore": "Bővebben", "downloadCv": "Önéletrajz letöltése" },
+  "contact": {
+    "title": "Kapcsolat",
+    "lead": "Nyugodtan keress bármelyik elérhetőségen, vagy töltsd le az önéletrajzomat.",
+    "mailMe": "Írj nekem:",
+    "checkOut": "Nézd meg a:",
+    "connect": "Kapcsolódj velem:",
+    "moreInfo": "Több infó rólam:"
+  }
+}
