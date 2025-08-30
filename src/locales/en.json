@@ -11,17 +11,54 @@
   },
   "about": {
     "title": "About",
-    "introTitle": "Hi! My name is Simon.",
-    "introSub": "Learn a little bit about me!"
+    "intro": {
+      "title": "Hi! My name is Simon.",
+      "sub": "Learn a little bit about me!"
+    },
+    "body": "I am a passionate developer and designer from Hungary, living in Denmark. I graduated from Business Academy SouthWest (EASV) as a multimedia designer in 2024, and I am currently studying Web Development. I am also interested in 3D design and game development and I create 3D models in my free time.",
+    "timeline": {
+      "multimediaDesign": "Multimedia Design @EASV",
+      "mddDate": "2022 - 2024",
+      "webDevelopment": "Web Development @EASV",
+      "wdDate": "2024 - Present",
+      "internMarketingPuzzle": "Intern @Marketing Puzzle",
+      "mpDate": "2024 Jan – Mar",
+      "internGrumsen": "Intern @Grumsen Development",
+      "gdDate": "2025 Aug - Present",
+      "badges": {
+        "degrees": "Degrees",
+        "currentEducation": "Current Education",
+        "internship": "Internship",
+        "currentInternship": "Current Internship"
+      }
+    },
+    "skills": {
+      "title": "My Skills",
+      "toolsText": "Tools & Technologies I work with:",
+      "tabs": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "ux": "UX / UI",
+        "design": "Design",
+        "databases": "Databases",
+        "game": "Game Dev"
+      }
+    }
   },
-  "skills": {
-    "title": "My Skills",
-    "toolsText": "Tools & Technologies I work with:"
+  "contact": {
+    "title": "Contact",
+    "lead": "Feel free to reach out through any of the contact options below, or for more information about me, download my CV.",
+    "actions": {
+      "email": { "label": "Mail me:" },
+      "github": { "label": "Check out my:", "cta": "GitHub" },
+      "linkedin": { "label": "Connect with me:", "cta": "LinkedIn" },
+      "cv": { "label": "More info about me:", "cta": "Download my CV" }
+    }
   },
   "footer": {
     "commits": "GitHub commits this year",
     "loading": "Loading commits...",
     "currentTime": "Current time: {time}",
-    "rights": "All rights reserved."
+    "rights": "Simon Jobbágy – All rights reserved."
   }
 }

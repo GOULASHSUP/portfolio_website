@@ -1,7 +1,7 @@
 {
   "nav": {
     "about": "Rólam",
-    "projects": "Projecktek",
+    "projects": "Projektek",
     "internships": "Gyakorlatok",
     "contact": "Kapcsolat"
   },
@@ -11,17 +11,54 @@
   },
   "about": {
     "title": "Rólam",
-    "introTitle": "Hello! Simon vagyok.",
-    "introSub": "Tudj meg egy kicsit rólam!"
+    "intro": {
+      "title": "Hello! Simon vagyok.",
+      "sub": "Tudj meg egy kicsit többet rólam!"
+    },
+    "body": "Egy lelkes fejlesztő és tervező vagyok Magyarországról, aki jelenleg Dániában él. 2024-ben végeztem a Business Academy SouthWest (EASV) multimédia tervező szakán, és jelenleg Webfejlesztést tanulok. Emellett érdekel a 3D design és a játékfejlesztés is, szabadidőmben 3D modelleket készítek.",
+    "timeline": {
+      "multimediaDesign": "Multimédia Design @EASV",
+      "mddDate": "2022 – 2024",
+      "webDevelopment": "Webfejlesztés @EASV",
+      "wdDate": "2024 - jelenleg",
+      "internMarketingPuzzle": "Gyakornok @Marketing Puzzle",
+      "mpDate": "2024 Jan - Már",
+      "internGrumsen": "Gyakornok @Grumsen Development",
+      "gdDate": "2025 Aug - jelenleg",
+      "badges": {
+        "degrees": "Végzettség(ek)",
+        "currentEducation": "Jelenlegi tanulmány(ok)",
+        "internship": "Gyakornokság(ok)",
+        "currentInternship": "Jelenlegi gyakorlat"
+      }
+    },
+    "skills": {
+      "title": "Készségeim",
+      "toolsText": "Eszközök és technológiák, amikkel dolgozom:",
+      "tabs": {
+        "frontend": "Frontend",
+        "backend": "Backend",
+        "ux": "UX / UI",
+        "design": "Design",
+        "databases": "Adatbázisok",
+        "game": "játék fejlesztés"
+      }
+    }
   },
-  "skills": {
-    "title": "Készségeim",
-    "toolsText": "Eszközök és technológiák, amikkel dolgozom:"
+  "contact": {
+    "title": "Kapcsolat",
+    "lead": "Nyugodtan keress bármelyik elérhetőségen, vagy töltsd le az önéletrajzomat.",
+    "actions": {
+      "email": { "label": "Írj nekem:" },
+      "github": { "label": "Nézd meg a:", "cta": "GitHubomat" },
+      "linkedin": { "label": "Kövess a:", "cta": "LinkedIn-en" },
+      "cv": { "label": "Több infó rólam:", "cta": "Önéletrajz letöltése" }
+    }
   },
   "footer": {
     "commits": "GitHub commit ebben az évben",
     "loading": "Commitek betöltése...",
     "currentTime": "Aktuális idő: {time}",
-    "rights": "Minden jog fenntartva."
+    "rights": "Jobbágy Simon – Minden jog fenntartva."
   }
 }

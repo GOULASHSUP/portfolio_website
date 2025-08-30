@@ -38,10 +38,10 @@
                 <div class="sm:flex sm:justify-between sm:gap-4">
                   <div>
                     <h3 class="text-lg font-bold text-zinc-300 sm:text-2xl">
-                      {{ $t("about.introTitle") }}
+                      {{ $t("about.intro.title") }}
                     </h3>
                     <p class="mt-1 text-sm font-medium text-zinc-400">
-                      {{ $t("about.introSub") }}
+                      {{ $t("about.intro.sub") }}
                     </p>
                   </div>
                   <div class="hidden sm:block sm:shrink-0">
@@ -55,19 +55,14 @@
 
                 <div class="mt-4">
                   <p class="text-sm text-pretty text-zinc-400">
-                    I am a passionate developer and designer from Hungary,
-                    living in Denmark. I graduated from Business Academy
-                    SouthWest (EASV) as a multimedia designer in 2024, and I am
-                    currently studying Web Development. I am also interested in
-                    3D design and game development and I create 3D models in my
-                    free time.
+                    {{ $t("about.body") }}
                   </p>
                 </div>
 
                 <dl class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div class="flex flex-col-reverse">
                     <dt class="text-sm font-medium text-zinc-400">
-                      2022 – 2024
+                      {{ $t("about.timeline.mddDate") }}
                     </dt>
                     <div class="flex flex-col-reverse">
                       <dt class="text-sm font-medium text-zinc-400">
@@ -77,15 +72,17 @@
                           rel="noopener noreferrer"
                           class="text-zinc-400 hover:text-accent transition duration-300 ease-in-out"
                         >
-                          Multimedia Design @EASV
+                          {{ $t("about.timeline.multimediaDesign") }}
                         </a>
                       </dt>
-                      <dd class="text-xs font-medium text-zinc-300">Degrees</dd>
+                      <dd class="text-xs font-medium text-zinc-300">
+                        {{ $t("about.timeline.badges.degrees") }}
+                      </dd>
                     </div>
                   </div>
                   <div class="flex flex-col-reverse">
                     <dt class="text-sm font-medium text-zinc-400">
-                      2024 – Present
+                      {{ $t("about.timeline.wdDate") }}
                     </dt>
                     <div class="flex flex-col-reverse">
                       <dt
@@ -100,17 +97,17 @@
                           rel="noopener noreferrer"
                           class="text-zinc-400 hover:text-accent transition duration-300 ease-in-out"
                         >
-                          Web Development @EASV
+                          {{ $t("about.timeline.webDevelopment") }}
                         </a>
                       </dt>
                       <dd class="text-xs font-medium text-accent">
-                        Current Education
+                        {{ $t("about.timeline.badges.currentEducation") }}
                       </dd>
                     </div>
                   </div>
                   <div class="flex flex-col-reverse">
                     <dt class="text-sm font-medium text-zinc-400">
-                      2024 Jan - Mar
+                      {{ $t("about.timeline.mpDate") }}
                     </dt>
                     <div class="flex flex-col-reverse">
                       <dt class="text-sm font-medium text-zinc-400">
@@ -120,17 +117,17 @@
                           rel="noopener noreferrer"
                           class="text-zinc-400 hover:text-accent transition duration-300 ease-in-out"
                         >
-                          Intern @Marketing Puzzle
+                          {{ $t("about.timeline.internMarketingPuzzle") }}
                         </a>
                       </dt>
                       <dd class="text-xs font-medium text-zinc-300">
-                        Internship
+                        {{ $t("about.timeline.badges.internship") }}
                       </dd>
                     </div>
                   </div>
                   <div class="flex flex-col-reverse">
                     <dt class="text-sm font-medium text-zinc-400">
-                      2025 Aug – Present
+                      {{ $t("about.timeline.gdDate") }}
                     </dt>
                     <div class="flex flex-col-reverse">
                       <dt
@@ -145,11 +142,11 @@
                           rel="noopener noreferrer"
                           class="text-zinc-400 hover:text-accent transition duration-300 ease-in-out"
                         >
-                          Intern @Grumsen Development
+                          {{ $t("about.timeline.internGrumsen") }}
                         </a>
                       </dt>
                       <dd class="text-xs font-medium text-accent">
-                        Current Internship
+                        {{ $t("about.timeline.badges.currentInternship") }}
                       </dd>
                     </div>
                   </div>
@@ -160,10 +157,10 @@
               >
                 <div>
                   <h3 class="text-lg font-bold text-zinc-300 sm:text-2xl">
-                    {{ $t("skills.title") }}
+                    {{ $t("about.skills.title") }}
                   </h3>
                   <p class="mt-1 text-sm font-medium text-zinc-400">
-                    {{ $t("skills.toolsText") }}
+                    {{ $t("about.skills.toolsText") }}
                   </p>
                   <!-- Skills Toggle -->
                   <div class="mt-4 flex gap-6">
@@ -182,7 +179,7 @@
                             : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
-                        Frontend
+                        {{ $t("about.skills.tabs.frontend") }}
                       </button>
                       <button
                         @click="setActiveSkill('be')"
@@ -194,7 +191,7 @@
                             : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
-                        Backend
+                        {{ $t("about.skills.tabs.backend") }}
                       </button>
                       <button
                         @click="setActiveSkill('ux')"
@@ -206,7 +203,7 @@
                             : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
-                        UX / UI
+                        {{ $t("about.skills.tabs.ux") }}
                       </button>
                       <button
                         @click="setActiveSkill('tools')"
@@ -218,7 +215,7 @@
                             : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
-                        Design
+                        {{ $t("about.skills.tabs.design") }}
                       </button>
                       <button
                         @click="setActiveSkill('db')"
@@ -230,7 +227,7 @@
                             : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
-                        Databases
+                        {{ $t("about.skills.tabs.databases") }}
                       </button>
                       <button
                         @click="setActiveSkill('game')"
@@ -242,7 +239,7 @@
                             : 'text-zinc-200 hover:bg-zinc-700/60'
                         "
                       >
-                        Game Dev
+                        {{ $t("about.skills.tabs.game") }}
                       </button>
                     </div>
 
@@ -520,7 +517,7 @@
             :class="{ 'text-accent': showOpen === 'contact' }"
             @click="toggleSection('contact')"
           >
-            Contact
+            {{ $t("contact.title") }}
           </h1>
           <Transition
             enter-active-class="transition-[max-height,opacity,transform] duration-300 ease-out"
@@ -535,8 +532,7 @@
                 class="w-full p-4 text-left rounded-md sm:p-8 bg-gradient-to-r from-zinc-800 via-zinc-900 to-zinc-900"
               >
                 <p class="mb-5 text-base text-zinc-200 sm:text-lg">
-                  Feel free to reach out through any of the contact options
-                  below, or for more information about me, download my CV.
+                  {{ $t("contact.lead") }}
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                   <a
@@ -558,7 +554,9 @@
                       />
                     </svg>
                     <div class="ml-3">
-                      <div class="mb-1 text-xs">Mail me:</div>
+                      <div class="mb-1 text-xs">
+                        {{ $t("contact.actions.email.label") }}
+                      </div>
                       <div class="-mt-1 font-sans text-sm font-semibold">
                         jobbagy.simon@gmail.com
                       </div>
@@ -584,9 +582,11 @@
                       />
                     </svg>
                     <div class="ml-3">
-                      <div class="mb-1 text-xs">Check out my:</div>
+                      <div class="mb-1 text-xs">
+                        {{ $t("contact.actions.github.label") }}
+                      </div>
                       <div class="-mt-1 font-sans text-sm font-semibold">
-                        GitHub
+                        {{ $t("contact.actions.github.cta") }}
                       </div>
                     </div>
                   </a>
@@ -610,9 +610,11 @@
                       />
                     </svg>
                     <div class="ml-3">
-                      <div class="mb-1 text-xs">Connect with me:</div>
+                      <div class="mb-1 text-xs">
+                        {{ $t("contact.actions.linkedin.label") }}
+                      </div>
                       <div class="-mt-1 font-sans text-sm font-semibold">
-                        LinkedIn
+                        {{ $t("contact.actions.linkedin.cta") }}
                       </div>
                     </div>
                   </a>
@@ -636,9 +638,11 @@
                       />
                     </svg>
                     <div class="ml-3">
-                      <div class="mb-1 text-xs">More info about me:</div>
+                      <div class="mb-1 text-xs">
+                        {{ $t("contact.actions.cv.label") }}
+                      </div>
                       <div class="-mt-1 font-sans text-sm font-semibold">
-                        Download my CV
+                        {{ $t("contact.actions.cv.cta") }}
                       </div>
                     </div>
                   </a>
