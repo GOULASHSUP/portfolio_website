@@ -1,28 +1,27 @@
 {
   "nav": {
-    "home": "Kezdőlap",
     "about": "Rólam",
-    "projects": "Projektek",
+    "projects": "Projecktek",
     "internships": "Gyakorlatok",
     "contact": "Kapcsolat"
   },
+  "navbar": {
+    "openToWork": "Munkát keresek",
+    "emailMeAt": "Írj nekem az alábbi címre:"
+  },
   "about": {
     "title": "Rólam",
-    "introTitle": "Szia! Simon vagyok.",
-    "introSub": "Ismerj meg egy kicsit jobban!"
+    "introTitle": "Hello! Simon vagyok.",
+    "introSub": "Tudj meg egy kicsit rólam!"
   },
   "skills": {
-    "title": "Képességeim",
+    "title": "Készségeim",
     "toolsText": "Eszközök és technológiák, amikkel dolgozom:"
   },
-  "learning": { "title": "Jelenleg tanulom" },
-  "ctas": { "readMore": "Bővebben", "downloadCv": "Önéletrajz letöltése" },
-  "contact": {
-    "title": "Kapcsolat",
-    "lead": "Nyugodtan keress bármelyik elérhetőségen, vagy töltsd le az önéletrajzomat.",
-    "mailMe": "Írj nekem:",
-    "checkOut": "Nézd meg a:",
-    "connect": "Kapcsolódj velem:",
-    "moreInfo": "Több infó rólam:"
+  "footer": {
+    "commits": "GitHub commit ebben az évben",
+    "loading": "Commitek betöltése...",
+    "currentTime": "Aktuális idő: {time}",
+    "rights": "Minden jog fenntartva."
   }
 }

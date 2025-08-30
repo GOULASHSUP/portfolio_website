@@ -2,24 +2,18 @@
   <footer
     class="bg-zinc-900 text-zinc-400 py-10 sm:py-6 px-6 lg:px-24 flex flex-col sm:flex-row items-start sm:items-center justify-between text-left gap-2 sm:gap-4"
   >
+    <!-- Commits -->
     <p class="md:text-sm text-xs text-accent">
       <span v-if="githubCommits !== null">
-        {{ githubCommits }} total
-        <a
-          href="https://github.com/GOULASHSUP"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-accent hover:text-zinc-200 transition duration-300 ease-in-out"
-        >
-          GitHub
-        </a>
-        commits this year
+        {{ githubCommits }} {{ $t("footer.commits") }}
       </span>
-      <span v-else>Loading commits...</span>
+      <span v-else>{{ $t("footer.loading") }}</span>
     </p>
-    <p class="md:text-sm text-xs">Current time: {{ currentTime }}</p>
     <p class="md:text-sm text-xs">
-      &copy; {{ new Date().getFullYear() }} – All rights reserved.
+      {{ $t("footer.currentTime") }} {{ currentTime }}
+    </p>
+    <p class="md:text-sm text-xs">
+      &copy; {{ new Date().getFullYear() }} – {{ $t("footer.rights") }}
     </p>
   </footer>
 </template>

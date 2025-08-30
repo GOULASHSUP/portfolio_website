@@ -23,12 +23,12 @@
             class="relative inline-flex rounded-full h-2 w-2 bg-yellow-500"
           ></span>
         </span>
-        Open to work
+        {{ $t("navbar.openToWork") }}
         <div
           v-if="showOpenToWorkInfo"
           class="absolute top-full mt-2 right-0 w-56 bg-zinc-700 text-zinc-300 text-sm p-3 rounded-md shadow-xl z-50 text-left"
         >
-          <p class="mb-1">Email me at:</p>
+          <p class="mb-1">{{ $t("navbar.emailMeAt") }}</p>
           <a
             href="mailto:jobbagy.simon@gmail.com"
             class="text-accent break-all hover:text-zinc-200"

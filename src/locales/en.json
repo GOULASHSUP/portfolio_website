@@ -1,10 +1,13 @@
 {
   "nav": {
-    "home": "Home",
     "about": "About",
     "projects": "Projects",
     "internships": "Internships",
     "contact": "Contact"
+  },
+  "navbar": {
+    "openToWork": "Open to work",
+    "emailMeAt": "Email me at:"
   },
   "about": {
     "title": "About",
@@ -15,14 +18,10 @@
     "title": "My Skills",
     "toolsText": "Tools & Technologies I work with:"
   },
-  "learning": { "title": "Currently Learning" },
-  "ctas": { "readMore": "Read more", "downloadCv": "Download my CV" },
-  "contact": {
-    "title": "Contact",
-    "lead": "Feel free to reach out through any of the contact options below, or for more information about me, download my CV.",
-    "mailMe": "Mail me:",
-    "checkOut": "Check out my:",
-    "connect": "Connect with me:",
-    "moreInfo": "More info about me:"
+  "footer": {
+    "commits": "GitHub commits this year",
+    "loading": "Loading commits...",
+    "currentTime": "Current time: {time}",
+    "rights": "All rights reserved."
   }
 }
